@@ -18,13 +18,6 @@ Name your repo `coderepo-{frontend}-{backend}-postman`, keep it private, and poi
 2. `GUIDELINES.md`. The acceptance contract.
 3. `skills/validate/`. The validator. It expects `GUIDELINES.md` at the repo root.
 
-Add these two lines to `.gitattributes` so neither file ships in the HackerRank export:
-
-```text
-GUIDELINES.md export-ignore
-skills/ export-ignore linguist-documentation
-```
-
 ## 3. Run the sample for better understanding
 
 ```bash
@@ -52,4 +45,4 @@ When in doubt, open the matching file in the sample and do it that way.
 1. Copy the log file named in `AGENTS.md` into `transcripts/`.
 2. Put any skill you wrote under `skills/`.
 3. Run the validator and fix every `FAIL`.
-4. Add `content@hackerrank.com` as a collaborator and post on Discord.
+4. Add `content.team@problemsetters.com` as a collaborator and post on Discord.

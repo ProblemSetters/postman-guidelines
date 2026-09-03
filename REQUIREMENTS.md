@@ -17,7 +17,6 @@ Pick five to ten features from the list below, or add your own of the same weigh
 - **HTTP response analysis.** Show status, timing, size, headers, and a formatted body (JSON, XML, HTML, plain text). Search and collapse inside the body.
 - **Request history.** Record every sent request with its response. Re-open, re-send, or save a history entry into a collection.
 - **Import and export.** Bring in a Postman collection or an OpenAPI file, and export your collections in a shareable format.
-- **Test assertions.** Write simple checks against a response (status equals, body path contains) and see pass or fail after each send.
 - **Code snippet generation.** Produce a curl, fetch, or language-native snippet for the current request.
 - **Workspaces and sharing.** Group collections and environments per workspace and share a workspace with another seeded user.
 
