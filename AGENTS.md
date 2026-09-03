@@ -1,6 +1,6 @@
 # AGENTS.md
 
-HackerRank Build Your Own Postman. AI Transcript Logging
+Build Your Own Postman App. AI Transcript Logging
 
 This file is the single source of truth for any coding agent working in this repo: Claude Code, OpenAI Codex CLI / Codex Cloud, Google Gemini CLI, Google Antigravity, Cursor, Windsurf, opencode, Aider, goose, Factory, RooCode, JetBrains Junie, GitHub Copilot, Devin, or any other AGENTS.md-aware tool.
 
@@ -24,15 +24,15 @@ the same rules apply and you share the same log file. Pass this context to every
 
 ---
 
-## 1. WHAT THIS REPO IS
+## 1. WHAT THIS APP REPO IS
 
-This is the guideline repo for the **HackerRank Build Your Own Postman** assignment. It is an assignment, not a timed challenge. There is no start time and no end time.
+This is the application repository for the **HackerRank Build Your Own Postman** assignment. The app is not a timed challenge: there is no start time and no end time.
 
-Participants must build and submit a Postman-inspired API app that helps developers create, organize, and analyze HTTP requests. The app is full-stack: React on the frontend, and Spring Boot, Express, or Django on the backend, with MongoDB for persistence.
+Build and submit a Postman-inspired API app that helps developers create, organize, and analyze HTTP requests. The app is full-stack React + Express (Node/MERN), with MongoDB for persistence. All implementation work described by this file belongs to this app.
 
 The feature scope lives in `REQUIREMENTS.md`. The setup and hygiene rules live in `INSTRUCTIONS.md`. The acceptance contract lives in `GUIDELINES.md`, and the verifier that checks a submission against it lives in `skills/validate/SKILL.md`.
 
-Participants may use any AI assistant, IDE, or tool to write code. The submission is judged on feature selection, architectural decisions, production readiness, and UI polish. Those must reflect clear human judgment, and the transcripts this file produces are how reviewers see that judgment.
+You may use any AI assistant, IDE, or tool to write code. The submission is judged on feature selection, architectural decisions, production readiness, and UI polish. Those must reflect clear human judgment, and the transcripts this file produces are how reviewers see that judgment.
 
 ---
 
@@ -92,7 +92,7 @@ Append this block to the log file, then continue:
 
 AGREEMENT RECORDED: <repo_root_absolute_path>
 Agent: <agent_name_or_unknown>
-Stack: node | springboot | django
+Stack: node
 System Time: <ISO-8601 local time with tz>
 ```
 
@@ -123,7 +123,7 @@ Repo Root: <absolute_path>
 Branch: <git_branch_or_unknown>
 Worktree: <worktree_path_or_main>
 Parent Agent: <parent_agent_name_or_none>
-Stack: <node|springboot|django>
+Stack: node
 ```
 
 ### 5.2 Per-turn entry (append after every user message you respond to)
@@ -174,7 +174,7 @@ The reviewer finds the participant's work through a **known repo layout**. Do no
 ├── AGENTS.md                         # This file, copied into the participant repo
 ├── README.md                         # Product identity, stack, structure, run instructions, seeded access
 ├── frontend/                         # React app, kept from the sample calendar repo
-├── backend/                          # Spring Boot, Express, or Django API, kept from the sample calendar repo
+├── backend/                          # Express API, kept from the Node sample calendar repo
 ├── skills/                           # Any skills the participant created, plus skills/validate from this repo
 ├── transcripts/                      # Exported AI transcripts (the §2 log file, plus any tool-native exports)
 ├── GUIDELINES.md                     # HackerRank Code Repo guidelines, copied from this repo

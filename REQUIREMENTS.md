@@ -4,7 +4,7 @@
 
 Build a Postman-inspired API app that helps developers create, organize, and analyze HTTP requests. Think beyond a request form and a pretty JSON viewer.
 
-The app is full-stack. It keeps the React frontend and the backend of the sample calendar repo you clone (Spring Boot, Express, or Django), and it persists data in MongoDB. Every feature you ship must work end to end: a usable screen, a real API call, a backend handler, and stored data.
+The app is full-stack React + Express (Node/MERN). It keeps the React frontend and Node/Express backend of the sample calendar repo you clone, and it persists data in MongoDB. Every feature you ship must work end to end: a usable screen, a real API call, a backend handler, and stored data.
 
 Pick five to ten features from the list below, or add your own of the same weight. Fewer than five is under scope. More than ten spreads the work too thin.
 
