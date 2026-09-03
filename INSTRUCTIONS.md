@@ -18,13 +18,6 @@ These files already belong at the root of this app repository:
 2. `GUIDELINES.md`. The acceptance contract.
 3. `skills/validate/`. The validator, which expects `GUIDELINES.md` at the repo root.
 
-Add these two lines to `.gitattributes` so neither file ships in the HackerRank export:
-
-```text
-GUIDELINES.md export-ignore
-skills/ export-ignore linguist-documentation
-```
-
 ## 3. Run and inspect the sample before building
 
 Run the cloned sample and inspect its frontend, backend, manifests, scripts, configuration, and README so you understand the standards you must preserve while building the Postman app.
