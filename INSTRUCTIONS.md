@@ -1,0 +1,55 @@
+# Instructions
+
+The Postman app is to be built referring to a sample calendar repo. Your repo must keep the same structure, setup flow, formatting, and coding conventions as that sample. The validator in `skills/validate/SKILL.md` checks all of it against `GUIDELINES.md`.
+
+## 1. Clone the sample for your stack
+
+| Stack | Repo |
+|---|---|
+| React + Express (MERN) | https://github.com/ProblemSetters/coderepo-react-node-calendar |
+| React + Spring Boot | https://github.com/ProblemSetters/coderepo-react-springboot-calendar |
+| React + Django | https://github.com/ProblemSetters/coderepo-react-django-calendar |
+
+Name your repo `coderepo-{frontend}-{backend}-postman`, keep it private, and point the clone's remote at it.
+
+## 2. Copy three things from this repo into the clone's root
+
+1. `AGENTS.md`, before you open an AI assistant. It starts transcript logging.
+2. `GUIDELINES.md`. The acceptance contract.
+3. `skills/validate/`. The validator. It expects `GUIDELINES.md` at the repo root.
+
+Add these two lines to `.gitattributes` so neither file ships in the HackerRank export:
+
+```text
+GUIDELINES.md export-ignore
+skills/ export-ignore linguist-documentation
+```
+
+## 3. Run the sample for better understanding
+
+```bash
+bun install && bash setup.sh --seed
+```
+
+```bash
+bun start
+```
+
+Prerequisites, ports, seeded credentials, and commands are in the sample's README.
+
+## 4. Keep what the sample gives you
+
+- **Stack and dependencies.** Same frameworks, database layer, build tool, package manager, and lockfile. Versions at least as recent as the sample. Any new dependency needs a written reason.
+- **Setup and run flow.** Same `hackerrank.yml` commands, same ports, same seed-and-reset on start, same `.env.example` handling, same read-only paths.
+- **Layout.** Feature folders in the frontend and backend, exactly as the sample groups them. Route, controller, service, and repository stay separate.
+- **Formatting and hygiene.** The sample's Prettier config and editor config. No dead code, no debugging output, no external media, American English throughout.
+- **UI quality.** The sample's design system, theme, responsive behavior, and state handling (loading, empty, validation, error).
+
+When in doubt, open the matching file in the sample and do it that way.
+
+## 5. Before you submit
+
+1. Copy the log file named in `AGENTS.md` into `transcripts/`.
+2. Put any skill you wrote under `skills/`.
+3. Run the validator and fix every `FAIL`.
+4. Add `content@hackerrank.com` as a collaborator and post on Discord.
